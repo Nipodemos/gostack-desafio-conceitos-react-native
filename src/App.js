@@ -35,13 +35,13 @@ export default function App() {
       <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
       <SafeAreaView style={styles.container}>
         <FlatList
-          style={styles.repositoryContainer}
+
           data={repositories}
           keyExtractor={repository => repository.id}
           renderItem={({ item: repository }) => (
 
 
-            <View >
+            <View style={styles.repositoryContainer} >
               <Text style={styles.repository}>{repository.title}</Text>
 
               <FlatList
